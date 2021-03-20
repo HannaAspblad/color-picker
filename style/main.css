@@ -1,0 +1,135 @@
+:root {
+  /* color palette */
+  --background-color: #eef2f5;
+  --bright-font-color: #eef2f5;
+  --dark-font-color: #252525;
+  --font-headings: "Bebas Neue", cursive;
+  --font-paragraphs: "Open Sans", sans-serif;
+  --border-color: rgb(29, 29, 29);
+
+  font-size: 16px;
+}
+
+body {
+  margin: auto;
+  max-width: 900px;
+}
+
+/* fonts */
+
+h1,
+h2 {
+  font-family: var(--font-headings);
+  color: var(--dark-font-color);
+  padding: 10px;
+  margin: 10px 0px;
+  display: inline-block;
+  line-height: 1em;
+}
+
+h1 {
+  font-size: 6em;
+  letter-spacing: 0.08em;
+  background-color: var(--dark-font-color);
+  color: var(--bright-font-color);
+}
+
+h2 {
+  font-size: 3em;
+  letter-spacing: 0.06em;
+}
+
+p,
+a {
+  font-family: var(--font-paragraphs);
+  font-size: 0.8em;
+  line-height: 1.8em;
+  letter-spacing: 0.1em;
+  color: var(--dark-font-color);
+  padding: 0 10px;
+}
+
+
+a,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: var(--dark-font-colorfont-color);
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+/* blocks */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  
+}
+
+main {
+  
+  min-height: 400px;
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  height: 200px;
+  padding: 20px;
+}
+
+/* color picker */
+
+.cp-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.cp-input-field {
+  box-sizing: border-box;
+  width: 250px;
+  border: 2px solid var(--border-color);
+  margin: 0 10px;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.17em;
+  color: var(--dark-font-color);
+}
+
+.cp-input-field:focus {
+  outline: none;
+}
+
+.cp-drop-down {
+  width: 250px;
+  border: 2px solid var(--border-color);
+  border-top: 0;
+  box-sizing: border-box;
+  margin: 0 10px;
+}
+
+.cp-color-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cp-color-list li {
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.17em;
+  color: var(--dark-font-color);
+  padding: 0 10px;
+}
